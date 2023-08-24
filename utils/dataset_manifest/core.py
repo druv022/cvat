@@ -23,7 +23,7 @@ from typing import Dict, List, Union, Optional
 class VideoStreamReader:
     def __init__(self, source_path, chunk_size, force):
         self._source_path = source_path
-        self._frames_number = None
+        self._frames_number = 0
         self._force = force
         self._upper_bound = 3 * chunk_size + 1
 
